@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('mailcontact/', include('mailcontact.urls')),  # added urls to access mail_contact app urls
+    path('', include('accounts.urls') ),
 ]
