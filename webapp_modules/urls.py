@@ -19,5 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('mailcontact/', include('mailcontact.urls')),  # added urls to access mail_contact app urls
-    path('', include('accounts.urls') ),
+    path('', include('accounts.urls')), # path to access accounts app views and forms through its own urls.py 
+    path('', include('django.contrib.auth.urls')),
 ]

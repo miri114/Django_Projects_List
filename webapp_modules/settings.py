@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 
     'accounts',
     'crispy_forms',
+    'crispy_bootstrap5',
     'mailcontact',
     
     'django.contrib.admin',
@@ -147,3 +148,6 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_Password')
 
 # Custom setting. To email
 RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
+
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/login'
